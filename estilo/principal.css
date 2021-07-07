@@ -1,0 +1,73 @@
+:root{
+    --amarelo: rgb(255, 255, 11);
+}
+
+/* valore iniciais */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:  'Arial', Times, serif;
+    color: white;
+   
+}
+
+/* logo e menu  */
+#parte_superior{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+#logo{
+    margin-left: 25px;
+    
+}
+#menu_bar a{
+    text-decoration:none;
+    color:white;
+    margin-right: 20px;
+}
+
+#menu_bar a:hover{
+    color: var(--amarelo);
+}
+
+
+/* parte do conteudo */
+
+#pagina_abertura{
+    background-image: url('../Imagens_teste-master/mobile/s1\ mobile.png');
+    background-attachment: fixed;
+    /* background-size:cover; */
+    height: 100vh;
+    
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#descricao_abertura{
+    margin-top: 20px;
+    text-align: center;
+}
+#titulo_principal{
+    font-size: clamp(20px,40px + 1vw,100px);
+}
+#descricao{
+    margin-top: 20px;
+}
+#botao_para_contato{
+    margin-top: 10px;
+}
+#botao_para_contato button {
+    background-color: rgb(74, 168, 255);
+    color: rgb(246, 244, 244);
+    border-radius: 20px;
+    padding: 15px 20px;
+    border: none;
+}
