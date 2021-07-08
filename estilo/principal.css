@@ -11,7 +11,6 @@
 
 body{
     font-family:  'Arial', Times, serif;
-    color: white;
    
 }
 
@@ -23,8 +22,11 @@ body{
     margin-top: 25px;
 }
 #logo{
-    margin-left: 25px;
+    margin-left: 70px;
     
+}
+#menu_bar{
+    margin-right: 40px;
 }
 #menu_bar a{
     text-decoration:none;
@@ -40,34 +42,59 @@ body{
 /* parte do conteudo */
 
 #pagina_abertura{
-    background-image: url('../Imagens_teste-master/mobile/s1\ mobile.png');
-    background-attachment: fixed;
-    /* background-size:cover; */
-    height: 100vh;
-    
+    background-image: url('../Imagens_teste-master/web/s1\ ft1.png');
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    
+    color: white;
+    text-shadow: 1px 1px 2px black;
 }
 
 #descricao_abertura{
-    margin-top: 20px;
+    margin-top: 150px;
     text-align: center;
+    margin-left: 300px;
+    width: 60%;
 }
 #titulo_principal{
-    font-size: clamp(20px,40px + 1vw,100px);
+    font-size: clamp(20px,50px + 1vw,100px);
+   
 }
 #descricao{
-    margin-top: 20px;
+    margin-top: 40px;
+    padding: 40px;
 }
 #botao_para_contato{
-    margin-top: 10px;
+    margin-top: 40px;
 }
 #botao_para_contato button {
-    background-color: rgb(74, 168, 255);
+    background-color: rgb(112, 186, 255);
     color: rgb(246, 244, 244);
-    border-radius: 20px;
-    padding: 15px 20px;
+    
+    border-radius: 25px;
+    padding: 20px 25px;
     border: none;
+    margin-bottom: 40px;
+}
+
+
+/* conteúdo do meio */
+
+#meio{
+    background-image: url('../Imagens_teste-master/web/bg.png');
+    background-color: black;
+}
+
+/* sobre a empresa  */
+
+#sobre{
+    margin: 40px 0 0 70px;
+}
+#sobre h1{
+    margin-bottom: 20px;
+}
+#detalhes_sobre{
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
 }
