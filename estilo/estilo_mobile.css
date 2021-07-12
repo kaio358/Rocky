@@ -1,0 +1,157 @@
+@media (max-width: 750px){
+    /* logo e o menu bar  */
+    #parte_superior{
+        justify-content: start;
+    }
+    #menu_hamburguer{
+        display: block;
+       
+    }
+    #logo{
+       display: inline-block;   
+       margin-left: 200px ;
+    }
+    .menu_bar{
+        position: absolute;
+        display: grid;
+        top: 90px;
+        left: 7px;
+        background-color: rgba(0, 0, 0, 0.572);
+        padding: 10px;
+    }
+    .menu_bar a{
+        margin-bottom: 10px;
+    }
+
+    /* miolo da pagina inicial */
+    #pagina_abertura{
+        background-image: url("../images/mobile/s1\ mobile.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #descricao_abertura{
+        width: 60%;
+        margin-left: 150px;
+    }
+    #titulo_principal{
+        margin-top: 150px;
+        font-size: 30px;
+        
+    }
+    #descricao{
+        margin-top: 150px;
+    }
+    #botao_para_contato{
+        margin-top: 150px;
+        margin-bottom: 350px;
+    }
+
+    /* parte do meio */
+    #meio{
+        background-image: none;
+    }
+
+    /* sobre a empresa  */
+    #sobre{
+        margin-left: 150px;
+    }
+    #detalhes_sobre{
+        width: 80%;
+    }
+
+    /* detalhes dos serviços  */
+    #servicos h1 {
+        margin-left: 50px;
+    }
+    #topicos{
+        display: grid;
+        margin-left: 30px;
+    }
+    .sobre_servico{
+        width: 80%;
+        padding: 32px;
+        
+    }
+    .sobre_servico h3{
+        margin-left: 55px;
+    }
+    .sobre_servico p{
+       margin-left: 55px;
+        margin-right: 0;
+    }
+    .sobre_servico:nth-child(1){
+        background-image: url('../images/mobile/s3\ ft1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .sobre_servico:nth-child(2){
+        background-image: url('../images/mobile/s3\ ft2.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .sobre_servico:nth-child(3){
+        background-image: url('../images/mobile/s3\ ft3.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    /* diferenciais  */
+    #diferencial h1{
+        margin-left: 120px;
+    }
+    #classificados{
+        display: grid;
+        margin-left: 50px;
+    }
+   .medalhas{
+       padding-bottom:50px ;
+   }
+   .medalhas img{
+    margin-left: 35px;
+    }
+    .medalhas p{
+        margin-left: 70px;
+    }
+    .medalhas:nth-child(1){
+        background-image: url("../images/mobile/s4\ ft1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .medalhas:nth-child(2){
+        background-image: url("../images/mobile/s4\ ft2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .medalhas:nth-child(3){
+        background-image: url("../images/mobile/s4\ ft3.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+    /* parte inferior  */
+    #contato_empresa{
+        flex-direction: column;
+    }
+    
+    /* lado direito, inferior da página  */
+    #lado_direito{
+        margin:30px 0 0 0 ;
+        display: block;
+        width: 100%;
+        
+    }
+    #lado_direito input{
+        width: 87vw;
+    }
+    #enviar_mensagem{
+        width:87vw ;
+    }
+
+    /* lado esquerdo inferior */
+    #lado_esquerdo{
+        display: block;
+        margin-left: var(--espaco_esquerda);
+        width: 80%;
+    }
+}

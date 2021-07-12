@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/principal.css">
+
+
+    <!-- estilo da página web  -->
+    <link rel="stylesheet" href="estilo/estilo_web.css">
+    <!-- estilo da página mobile  -->
+    <link rel="stylesheet" href="estilo/estilo_mobile.css">
+
+    <!-- scripts  -->
+    <script src="scripts/interacao.js"></script>
+
     <title>ROCKY</title>
 </head>
 <body>
@@ -14,34 +23,40 @@
     <main id="pagina_abertura">
         <!-- nessa parte se encontra tanto o logo como o menu de navegação -->
         <header id="parte_superior">
-            <div id="logo">
-                <img src="Imagens_teste-master/web/logo.png" alt="Logo da empresa Rocky">
+            <div id="menu_hamburguer">
+                <img src="images/mobile/outline_menu_white_24dp.png" alt="menu hamburguer" onclick="ocultar()">
             </div>
-            <nav id="menu_bar">
-                <a href="#sobre">SOBRE A ROCKY</a>
-                <a href="#">SERVIÇOS</a>
-                <a href="#">DIFERENCIAIS</a>
-                <a href="#">TRABALHE CONOSCO</a>
-                <a href="#">CONTATO</a>
-                <a href="#">BLOG</a>
+            <div id="logo">
+                <img src="images/web/logo.png" alt="Logo da empresa Rocky"  >
+            </div>
+            <nav class="menu_bar">
+                <a href="#sobre">sobre a rocky</a>
+                <a href="#servicos">serviços</a>
+                <a href="#diferencial">diferenciais</a>
+                <a href="#">trabalhe conosco</a>
+                <a href="#">contato</a>
+                <a href="#">blog</a>
             </nav>
         </header>
         <!-- titulos, botão e breve descrição do rocky -->
         <section id="descricao_abertura">
 
             <div id="titulo_principal">
-                 <h1>FULL DIGITAL PERFORMANCE</h1>
+                 <h1>full digital performance</h1>
             </div>
             <div id="descricao">
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit repudiandae quasi pariatur quisquam soluta, rem eligendi corporis qui cupiditate maxime voluptas totam molestias sunt distinctio provident veritatis maiores ad illo.</p>
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  <span> Odit repudiandae quasi pariatur quisquam soluta</span>, rem eligendi corporis qui cupiditate maxime voluptas totam molestias sunt distinctio provident veritatis maiores ad illo.</p>
             </div>
             <div id="botao_para_contato">
-                <a href="#"><button>ENTRE EM CONTATO AGORA</button></a>
+                <a href="#"><button>entre em contato agora</button></a>
             </div>
         </section>
     </main>
+
+
     <!-- nesse vai o conteúdo sobre, diferenciais e serviços -->
     <section id="meio">
+        <!-- sobre a empresa  -->
         <div id="sobre">
             <h1>Sobre</h1>
             <div id="detalhes_sobre">
@@ -50,6 +65,88 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ducimus, illo laboriosam sapiente odit dicta deleniti ipsa natus earum impedit voluptatem non vitae alias enim exercitationem ex aspernatur nesciunt officiis.</p>
             </div>
         </div>
+        <!-- detalhes do emprego/ serviços -->
+        <div id="servicos">
+            <h1>serviços</h1>
+            <div id="topicos">
+                <div class="sobre_servico">
+                    <h3>SERVIÇOS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque assumenda ipsum quis sint, eius cumque quod? Aperiam neque tempora obcaecati velit suscipit sint! Praesentium tenetur autem quisquam fugiat aspernatur rerum!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatum architecto ullam veniam provident adipisci temporibus dolorum aut rem. Tempora, veniam amet fuga dolore voluptates odit. Impedit possimus minima expedita.</p>
+                </div>
+                <div class="sobre_servico">
+                    <h3>Mídia Digital de Performance</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque assumenda ipsum quis sint, eius cumque quod? Aperiam neque tempora obcaecati velit suscipit sint! Praesentium tenetur autem quisquam fugiat aspernatur rerum!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatum architecto ullam veniam provident adipisci temporibus dolorum aut rem. Tempora, veniam amet fuga dolore voluptates odit. Impedit possimus minima expedita.</p>
+                </div>
+                <div class="sobre_servico">
+                    <h3>Implementações Tecnológicas </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque assumenda ipsum quis sint, eius cumque quod? Aperiam neque tempora obcaecati velit suscipit sint! Praesentium tenetur autem quisquam fugiat aspernatur rerum!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatum architecto ullam veniam provident adipisci temporibus dolorum aut rem. Tempora, veniam amet fuga dolore voluptates odit. Impedit possimus minima expedita.</p>
+                </div>
+            </div>
+        </div>
+        <!-- O diferencial da empresa -->
+        <div id="diferencial">
+            <h1>Diferenciais</h1>
+            <div id="classificados">
+                <div class="medalhas">
+                    <img src="images/web/variante-de-medalha-com-estrela.png" alt="medalha de estrela">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum doloremque reiciendis, cum deleniti enim mollitia voluptas earum dicta et soluta nostrum tenetur voluptate dolorem consectetur debitis! Nesciunt hic eos fugit.</p>
+                </div>
+                <div class="medalhas">
+                    <img src="images/web/variante-de-medalha-com-estrela.png" alt="medalha de estrela">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum doloremque reiciendis, cum deleniti enim mollitia voluptas earum dicta et soluta nostrum tenetur voluptate dolorem consectetur debitis! Nesciunt hic eos fugit.</p>
+                </div>
+                <div class="medalhas">
+                    <img src="images/web/variante-de-medalha-com-estrela.png" alt="medalha de estrela">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum doloremque reiciendis, cum deleniti enim mollitia voluptas earum dicta et soluta nostrum tenetur voluptate dolorem consectetur debitis! Nesciunt hic eos fugit.</p>
+                </div>
+            </div>
+        </div>
     </section>
+
+
+    <!-- Está parte sobre o contato, localização, entre outros meios da empresa a serem encontrada -->
+    <div class="listra_amarela"></div>
+    <section id="contato_empresa">
+       
+        
+
+            <aside id="lado_esquerdo">
+                <figure id="logos_de_empresas">
+                     <div id="logo_inferior">
+                         <img src="images/web/logo.png" alt="Logo da empresa Rocky">
+                     </div>
+                     <div id="redes_sociais">
+                         <a href="https://www.facebook.com/RockyDigitalPerformance/?ref=page_internal" target="_blank"><img src="images/web/facebook.png" alt="logo do facebook"></a>
+                         <a href="https://www.linkedin.com/company/rocky-ag/" target="_blank"><img src="images/web/linkedin.png" alt="logo do linkedin"></a>
+                        
+                     </div>
+                </figure>
+                <div id="meios_comunicacao">
+                    <p><img src="images/web/email-nao-lido.png" alt="carta de correspondência eletronico"> contato@rocky.ag</p><p>|</p>
+                    <p><img src="images/web/phone-call.png" alt="telefone"> (15) 3321-1105</p>
+                    <p><img src="images/web/tool.png" alt="localização"> <small>R. Romeu do Nascimento, 247 - Jardim Portal da Colina, Sorocaba - SP, 18047-410 , 2º andar</small></p>
+                </div>
+                <div id="ate_logo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quo excepturi dolorem? Dolor, neque facere debitis adipisci a iusto totam laboriosam dignissimos dolorum voluptatem ducimus repellendus aliquam fugit et iure.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate iusto nobis cumque minus provident temporibus dolore, a assumenda non doloremque eius debitis rem excepturi delectus quisquam eos, porro ipsa dolor?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ullam praesentium repudiandae aspernatur dolor quidem molestias eius, unde explicabo sed officia eos placeat. Aut debitis quasi quos, natus vitae nam?</p>
+                </div>
+            </aside> 
+            <aside id="lado_direito">
+                <footer id="dados_usuario">
+                    <input type="text" name="paraNome" id="emNome" placeholder="Nome">
+                    <input type="email" name="paraEmail" id="emEmail" placeholder="Email">
+                    <input type="number" name="paraValor" id="emValor" placeholder="Investimento mensal">
+                    <input type="text" name="paraMensagem" id="emMensagem" placeholder="Mensagem">
+                    <button id="enviar_mensagem">Enviar mensagem</button>
+                </footer>
+            </aside>
+      
+            
+    </section>
+    <div class="listra_amarela"></div>
 </body>
 </html>

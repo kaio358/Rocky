@@ -1,0 +1,367 @@
+:root{
+    --amarelo: #efe60b;
+    --espaco_esquerda: 70px;
+    --font_titulo_meio: 45px;
+}
+
+/* valore iniciais */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:  'Arial', Times, serif;
+    font-weight: 600;
+    
+}
+
+#menu_hamburguer{
+    display: none;
+}
+
+/* logo e menu  */
+#parte_superior{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+#logo{
+    margin-left: var(--espaco_esquerda);
+    
+}
+.menu_bar{
+    margin-right: 40px;
+    text-transform: uppercase;
+}
+.menu_bar a{
+    text-decoration:none;
+    color:white;
+    margin-right: 20px;
+}
+
+.menu_bar a:hover{
+    color: var(--amarelo);
+}
+
+
+/* parte do conteudo */
+
+#pagina_abertura{
+    background-image: url('../images/web/s1\ ft1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+#descricao_abertura{
+    margin-top: 150px;
+    text-align: center;
+    margin-left: 300px;
+    width: 60%;
+}
+#titulo_principal{
+    font-size: clamp(20px,50px + 1vw,100px);
+    text-transform: uppercase;
+}
+#descricao{
+    margin-top: 40px;
+    padding: 40px;
+}
+#descricao span{
+    color: var(--amarelo);
+}
+#botao_para_contato{
+    margin-top: 40px;
+}
+#botao_para_contato button {
+    background-color: rgb(112, 186, 255);
+    color: rgb(246, 244, 244);
+    text-transform: uppercase;
+    border-radius: 25px;
+    padding: 20px 25px;
+    border: none;
+    margin-bottom: 40px;
+}
+
+
+/* conteúdo do meio */
+
+#meio{
+    background-image: url('../images/web/bg_recortado.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+/* sobre a empresa  */
+
+#sobre{
+    margin-left: var(--espaco_esquerda);
+}
+#sobre h1{
+    padding-top: 80px;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    font-size:var(--font_titulo_meio);
+}
+#detalhes_sobre{
+    background-color: white;
+    padding: 45px;
+    box-shadow: 5px 5px 10px rgba(0,0, 0,0.363);
+    width: 65%;
+}
+
+#detalhes_sobre p{
+    margin-bottom: 15px;
+}
+
+#detalhes_sobre p:nth-child(1){
+    font-weight: 100;
+}
+
+#detalhes_sobre p:nth-child(3){
+    font-weight: 100;
+}
+
+/* sobre o serviço */
+#servicos{
+    margin-top: 40px;
+    margin-left: var(--espaco_esquerda);
+}
+
+#servicos h1{
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-size: var(--font_titulo_meio);
+    margin-left: 15px;
+}
+
+#topicos{
+    display:flex;
+    align-items: center;
+    
+}
+
+.sobre_servico{
+    width: 60%;
+    text-align: center;
+    padding: 20px;
+    margin-right: 50px;
+}
+.sobre_servico p{
+    margin: 30px 0px 20px 30px;
+    text-shadow: 1px 1px 1px black;
+    width:82%;
+    color: white;
+}
+.sobre_servico h3{
+    color: var(--amarelo);
+    margin-top: 30px;
+}
+
+.sobre_servico:nth-child(1){
+    background-image: url('../images/web/s3\ ft1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+.sobre_servico:nth-child(2){
+    background-image: url('../images/web/s3\ ft2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sobre_servico:nth-child(3){
+    background-image: url('../images/web/s3\ ft3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* diferencial  */
+#diferencial{
+    margin-top: 150px;
+    margin-left: var(--espaco_esquerda);
+    
+}
+#diferencial h1{
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-size: var(--font_titulo_meio);
+    margin-left: 15px;
+}
+
+#classificados{
+    display:flex;
+    align-items: center;
+    color: white;
+}
+
+.medalhas{
+    text-align: center;
+    width: 70%;
+    margin-right: 150px;
+}
+.medalhas img{
+    margin-left: 15px;
+    margin-top: 50px;
+}
+.medalhas p{
+    margin-top: 50px;
+    margin-left: 46px;
+    padding-bottom: 30px;
+    width: 70%;
+    text-shadow: 1px 1px 1px black;
+}
+.medalhas:nth-child(1){
+    background-image: url('../images/web/s4\ ft1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* aqui tentei mudar o brilho mas acabou mudando tudo */
+    /* filter: brightness(70%); */ 
+
+}
+.medalhas:nth-child(2){
+    background-image: url('../images/web/s4\ ft2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.medalhas:nth-child(3){
+    background-image: url('../images/web/s4\ ft3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+/* tudo envolvendo de contato */
+
+.listra_amarela{
+    padding: 30px;
+    background-color: var(--amarelo);
+   
+}
+#contato_empresa{
+    background-color: black;
+    display: flex;
+    
+    padding-top: 60px;
+}
+
+/* lado direito, onde se encontra o envio de mensagem a plataforma */
+
+#lado_direito{
+    margin-left: 10vw;
+    padding: 20px;
+    background-color: #8d8d8d;
+    width: 35%;
+    margin-bottom: 60px;
+}
+#dados_usuario{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#lado_direito input{
+    padding: 5px;
+    width: 30vw ;
+    margin: 10px;
+    
+}
+#lado_direito input::placeholder{
+    color: rgba(133, 131, 131, 0.867);
+    font-size: large;
+    text-align: start;
+    
+}
+#emNome{
+    height:clamp(20px,20px + 5vh, 100px);
+}
+#emEmail{
+    height:clamp(20px,20px + 5vh, 100px);
+}
+#emValor{
+    height:clamp(20px,20px + 5vh, 100px);
+}
+
+#emMensagem{
+    height:clamp(20px,100px + 5vh, 300px);
+    
+}
+#enviar_mensagem {
+    width: 30vw;
+    margin-top: 30px;
+    height:clamp(20px,20px + 5vh, 100px);
+    background-color: rgb(112, 186, 255);
+    color: white;
+    border: none;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+/* lado esquerdo descrição do contato */
+#lado_esquerdo{
+
+    margin-left: var(--espaco_esquerda);
+    width: 40%;
+}
+#logos_de_empresas{
+    
+    display:flex;
+    align-items: center;
+    
+}
+
+#logo_inferior{
+    margin-right: 40px;
+}
+
+#redes_sociais a{
+    margin-left: 30px;
+}
+
+/* telefone, email e endereço */
+#meios_comunicacao{
+    margin-top: 25px;
+    color: white;
+
+    
+}
+#meios_comunicacao p{
+    margin-right:20px ;
+    display: inline-block;
+    
+}
+
+#meios_comunicacao p:nth-child(4){
+    margin-top: 10px;
+    
+}
+
+#meios_comunicacao img{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+/* texto de despedida */
+#ate_logo p{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+#ate_logo p:nth-child(1){
+    color: white;
+}
+#ate_logo p:nth-child(2){
+    color: var(--amarelo);
+}
+#ate_logo p:nth-child(3){
+    color: rgb(118, 118, 255);
+}
